@@ -20,6 +20,7 @@ library(knitr)
 library(htmltools)
 library(IRdisplay)
 assur <- read_excel("Benchmark appli assurance.xlsx")
+results_dir <- 'results'
 ```
 
 
@@ -208,7 +209,9 @@ ggplot(assur) +
  labs(y = "Total", title = "Nombre de téléchargements des applications du groupe test") +
  theme_minimal() -> dark
 ggplotly(dark) ->p
-ggplotly(p)
+
+htmlwidgets::saveWidget(p, 
+                        file.path(results_dir, 'dep.html'))
 ```
 
 
@@ -374,11 +377,11 @@ ggplot(assur) +
     title = "Répartition des notes par nombre d'applications"
   ) +
   theme_minimal() +
-  theme(legend.position = "none") -> GME
-ggplotly(GME)->GMED
+  theme(legend.position = "none") -> derek
+ggplotly(derek)->derek
 
-htmlwidgets::saveWidget(GMED, 
-                        file.path(results_dir, 'GMED.html'))
+htmlwidgets::saveWidget(derek, 
+                        file.path(results_dir, 'derek.html'))
 as.numeric(assur$Applications)->assur$Applications
 ```
 
@@ -388,3 +391,35 @@ src='results\GMED.html' width='800' height='500'></iframe>
 Ces observations sont confirmées : Les assureurs ayant une seule application atteignent des notes plus élevées et plus basses, tandis que ceux à 3 applications ont la médiane la plus élevée. On remarque également que la valeur la plus élevée de chaque groupe N est plus faible que celle du groupe N-1, et que si le groupe à 1 application possède les valeurs les plus élevées, sa médiane est quant à elle d'assez loin la plus faible. 
 
 On étudiera plus en détail ce groupe plus loin dans notre étude. 
+
+### C.Téléchargements et Chiffre d'affaires 
+
+```{r}
+assur %>%
+  filter(!is.na(`Téléchargements (en k)`)) %>%
+  ggplot() +
+  aes(
+    x = `Chiffre d'affaire (en M\200)`,
+    y = `Téléchargements (en k)`,
+    colour = Type,
+    label = Assureur
+  ) +
+  geom_jitter(size = 1.5) +
+  scale_color_hue(direction = 1) +
+  labs(
+    title = "Le nombre de téléchargemets est corrélié au chiffre d'affaires,
+    avec quelques exceptions"
+  ) +
+  theme_minimal() -> luffy
+ggplotly(luffy) -> luffy
+
+htmlwidgets::saveWidget(luffy, 
+                        file.path(results_dir, 'luffy.html'))
+```
+
+<iframe scrolling='no' seamless='seamless' style='border:none'
+src='results\luffy.html' width='800' height='500'></iframe> 
+
+On observe une corrélation positive entre nombre de téléchargements & chiffre d'affaires, ce qui semble normal puisqu'une compagnie avec un plus grand CA dipose logiquement d'un plus grand potentiel d'utilisateurs. On repère néanmoins de nombreuses valeurs ne suivant pas cette corrélation, avec en premier lieu les assurtechs qui surperforment largement au regard de leur CA, notamment parce que leur application est leur moyen premier voire unique d'échange avec leurs assurés. 
+
+On remarque aussi quelques surperformances parmi les assureurs généralistes & institutions de prévoyance traditionnelles, mais les explications peuvent diverger. Pour certains (GMF, )
