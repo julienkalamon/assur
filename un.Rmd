@@ -720,5 +720,7 @@ as.numeric(assur$Applications)->assur$Applications
 src='results\GMED.html' width='800' height='500'></EMBED> 
 
 Ces observations sont confirmées : Les assureurs ayant une seule application atteignent des notes plus élevées et plus basses, tandis que ceux à 3 applications ont la médiane la plus élevée. On remarque également que la valeur la plus élevée de chaque groupe N est plus faible que celle du groupe N-1, et que si le groupe à 1 application possède les valeurs les plus élevées, sa médiane est quant à elle d'assez loin la plus faible. 
->>>>>>> 29253f4189b28d96f3c4fe1cc9a54fe231d7d6ca
-On étudiera plus en détail ce groupe plus loin dans notre étude.
+
+On étudiera plus en détail ce groupe plus loin dans notre étude. 
+
+Modif test
