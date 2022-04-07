@@ -5,7 +5,8 @@ date: "`r Sys.Date()`"
 output:
   rmdformats::readthedown:
     highlight: kate 
-    css : style.css
+    css : style.css 
+    code_source : https://github.com/julienkalamon/assur
 ---
 
 ```{r, include=FALSE}
@@ -122,10 +123,10 @@ ggplot(assur) +
 
 Le groupe d'étude est composé de 40 acteurs du secteur de l'assurance dont : 
 
- - 21 généralistes 
- - 10 assureurs spécialisés en prévoyance
- - 4 courtiers
- - 3 startups 
+ - 17 généralistes 
+ - 11 assureurs spécialisés en prévoyance
+ - 6 courtiers
+ - 4 startups 
  - 1 spécialiste de l'assurance automobile 
  
 ### A. Applications
@@ -159,7 +160,7 @@ ggplot(assur) +
 ggplotly(c18) 
 ```
 
-On observe une grande disparité de chiffres d’affaires au sein du groupe test, avec des valeurs allant de 10 millions d'euros à 27,3 Milliards. La valeur médiane
+On observe une grande disparité de chiffres d’affaires au sein du groupe test, avec des valeurs allant de 10 millions d'euros à 27,3 Milliards. La valeur médiane est de 2 milliards d'euros, la moyenne est à 4,3 milliards.
 
 ```{r, echo=FALSE}
 assur %>%
@@ -176,7 +177,7 @@ p5
 
 ```
 
-Si on décompose par groupe, les deux groupes ayant les chiffres d'affaires médians les plus élevés sont les assureurs de Prévoyance (4,1 Milliards de moyenne, 2,8 Mds de Médiane) les Généralistes (5,9 Mds de moyenne, 2,2 Mds de médiane), parmis lesquels ont retrouve tous les gros acteurs historiques du marché.
+Si on décompose par groupe, les deux groupes ayant les chiffres d'affaires médians les plus élevés sont les assureurs généralistes (7,3 Milliards de moyenne, 4 Mds de Médiane) & la Prévoyance (3,8 Mds de moyenne, 2,8 Mds de médiane), parmi lesquels ont retrouve tous les gros acteurs historiques du marché.
 
 ### 
 
@@ -195,7 +196,7 @@ ggplotly(p4) ->p4
 p4
 ```
 
-Logiquement, les CA moyens de startups (45 millions) et des courtiers (340 millions) sont sans communes mesures. 
+Logiquement, les CA moyens de startups (40 millions) et des courtiers (245 millions) sont sans communes mesures. 
 
 ### C. Téléchargements 
 
@@ -219,7 +220,7 @@ Une grande partie des applications ont été téléchargées entre 100 et 500 00
 
 
 <iframe scrolling='no' seamless='seamless' style='border:none'
-src='dep.html' width='800' height='500'></iframe>
+src='results/dep.html' width='800' height='500'></iframe>
 
 Au sein des différents groupes, la répartition est très hétérogène, puisqu'on observe quasiment tous les niveaux de pénétration dans chaque groupe. Le seul groupe qui se démarque est celui des assurtech (100-500 000 téléchargements pour l'ensemble des acteurs du groupe).
 
@@ -422,4 +423,272 @@ src='results\luffy.html' width='800' height='500'></iframe>
 
 On observe une corrélation positive entre nombre de téléchargements & chiffre d'affaires, ce qui semble normal puisqu'une compagnie avec un plus grand CA dipose logiquement d'un plus grand potentiel d'utilisateurs. On repère néanmoins de nombreuses valeurs ne suivant pas cette corrélation, avec en premier lieu les assurtechs qui surperforment largement au regard de leur CA, notamment parce que leur application est leur moyen premier voire unique d'échange avec leurs assurés. 
 
-On remarque aussi quelques surperformances parmi les assureurs généralistes & institutions de prévoyance traditionnelles, mais les explications peuvent diverger. Pour certains (GMF, )
+On remarque aussi quelques surperformances parmi les assureurs généralistes & institutions de prévoyance traditionnelles, mais les explications peuvent diverger. Pour certains (GMF, Direct Assurances), cela s'explique par la bonne qualité de leur application de selfcare, mais d'autres acteurs (comme ceux du courtage) ont une bonne pénétration malgré de (très mauvaises) notes, ce qui peut-être le signe que celle-ci a été fortement poussée au détriment des aurtes canaux.
+
+
+
+# 3. Groupes d'intérêts 
+
+
+## 3.1 Les Généralistes : de fortes disparités 
+
+Le groupe des "Généralistes", présenté précedemment, est le groupe le plus large de notre étude avec 17 représentants. Il s'agit du groupe le plus hétérogène. Il regroupe à la fois des sociétés d'assurance mutuelle à réseau d'agents (Grouapama, sociétés du groupe Covéa), une SA du CAC 40 (Axa), une filiale d'une multinationale côtée à Francfort (Allianz). Il s'agit du groupe avec le CA médian le plus élevé, ainsi que la 2e note médiane la plus forte après les assurtech. On trouve au sein de ce groupe la note la plus élevée (4,7) et la plus faible (1,5). 
+
+
+```{r}
+assur$Applications<- as.character(assur$Applications)
+
+assur %>%
+  filter(Type %in% "Généraliste") %>%
+  ggplot() +
+  aes(
+    x = `Chiffre d'affaire (en M\200)`,
+    y = `Note moyenne`,
+    colour = Applications,
+    size = Applications, 
+    label = Assureur
+  ) +
+  geom_point(shape = "circle") +
+  scale_color_hue(direction = 1) +
+  theme_minimal() +
+  ylim(0, 5) -> leesin
+ggplotly(leesin) -> leesin
+
+htmlwidgets::saveWidget(leesin, 
+                        file.path(results_dir, 'leesin.html'))
+
+
+```
+
+<iframe scrolling='no' seamless='seamless' style='border:none'
+src='results\leesin.html' width='800' height='500'></iframe> 
+
+Si on observe graphiquement la corrélation entre chiffre d'affaires et note déjà remarquée pour l'ensemble du groupe test, deux groupes distincts semblent se détacher chez les Généralistes : un groupe très hétérogène sous les 10 milliards de CA, et un groupe plus homogène au dessus de cette barre. 
+
+### A. Généralistes : les CA intermédiaires 
+
+```{r}
+assur %>%
+  filter(Type %in% "Généraliste") %>%
+  filter(`Chiffre d'affaire (en M\200)` >= 10L & `Chiffre d'affaire (en M\200)` <= 
+           10000L) %>%
+  ggplot() +
+  aes(
+    x = `Chiffre d'affaire (en M\200)`,
+    y = `Note moyenne`,
+    colour = Applications,
+    size = Applications, 
+    label = Assureur
+  ) +
+  geom_point(shape = "circle") +
+  scale_color_hue(direction = 1) +
+  labs(
+    subtitle = "Répartition des notes : généralistes avec moins de 10Mds\200 de CA"
+  ) +
+  theme_minimal() +
+  ylim(0, 5) -> celtics
+ggplotly(celtics) -> celtics
+htmlwidgets::saveWidget(celtics, 
+                        file.path(results_dir, 'celtics.html'))
+```
+
+<iframe scrolling='no' seamless='seamless' style='border:none'
+src='results\celtics.html' width='800' height='500'></iframe> 
+
+On parle ici de CA "intermédiaires" car même les CA les plus faibles chez les généralistes sont aux alentours d'un demi milliard.  
+On observe un groupe extrêmement polarisé, avec des valeurs extrêmement faibles chez les assureurs à faible CA et possédant une seule application (AVIVA, AGPM - Tégo).  
+A noter tout de même que Direct Assurance, plus faible CA du groupe, s'en sort relativement bien avec ses 2 applications puisque son application de selfcare est notée à 4,1 et que sa moyenne globale est plombée par YouDrive, application promettant à l'utilisateur "d'évaleur [son] niveau de conduite et estimer les économies qu'il pourrait faire sur son assurance auto jeune conducteur". Cela prouve bien que même les "petits" assureurs traditionnels sont capables de produire des applications fonctionnelles. 
+
+Au delà d'un milliard de chiffre d'affaire, les notes sont globalement médiocres (entre 3 et 4), avec également 3 ou 4 applications par assureur. On observe  trois gros écart : GMF (4,7), MMA (1,5) & Gan Assurances (2,2). 
+
+Nous étudierons ces trois assureurs dans notre partie intitulée "Etudes de cas"
+
+### B. Généralistes : Les poids lourds
+```{r}
+assur %>%
+  filter(Type %in% "Généraliste") %>%
+  filter(`Chiffre d'affaire (en M\200)` >= 9881L & `Chiffre d'affaire (en M\200)` <= 
+           27300L) %>%
+  filter(!(Applications %in% "3")) %>%
+  ggplot() +
+  aes(
+    x = `Chiffre d'affaire (en M\200)`,
+    y = `Note moyenne`,
+    colour = Applications,
+    size = Applications, 
+    label = Assureur
+  ) +
+  geom_point(shape = "circle") +
+  scale_color_hue(direction = 1) +
+  labs(
+    subtitle = "Répartition des notes : généralistes avec plus de 10Mds\200 de CA"
+  ) +
+  theme_minimal() +
+  ylim(0, 5) -> lakers
+ggplotly(lakers) -> lakers
+htmlwidgets::saveWidget(lakers, 
+                        file.path(results_dir, 'lakers.html'))
+
+```
+
+<iframe scrolling='no' seamless='seamless' style='border:none'
+src='results\lakers.html' width='800' height='500'></iframe> 
+
+La répartition des CA au sein des "poids lourds" est beaucoup plus homogène. Ils sont cependant l'illustration du précepte selon lequel il vaut mieux privilégier la qualité à la quantité en terme d'applications mobiles. Ceux s'étant limités à une ou deux applications mobiles sont au delà de notre marqueur de qualité, la note de 7, tandis que Groupama (5 apps) et Axa (4 apps) sont en dessous. 
+
+Nous étudierons Groupama dans nos études de cas. 
+
+## 3.2 Les assurtechs : tout miser sur le digital
+
+```{r}
+assur %>%
+ filter(Type %in% "Startup") %>%
+ ggplot() +
+  aes(
+    x = `Chiffre d'affaire (en M\200)`,
+    y = `Note moyenne`,
+    colour = `Téléchargements (en k)`,
+    label = Assureur
+  ) +
+  geom_point(shape = "circle", size = 1.5) +
+  scale_color_hue(direction = 1) +
+  labs(title = "L'immense similitude des assurtechs") +
+  theme_minimal() +
+  ylim(0, 5) -> sanji
+ggplotly(sanji) -> sanji
+htmlwidgets::saveWidget(sanji, 
+                        file.path(results_dir, 'sanji.html'))
+```
+
+<iframe scrolling='no' seamless='seamless' style='border:none'
+src='results\sanji.html' width='800' height='500'></iframe> 
+
+Peut-on tirer grand chose d'une comaparaison entre les différents assurtechs sans entrer dans le détail de leurs parcours utilisateurs ? Probablement pas, tant leurs metrics relevés dans cette étude sont proches. 
+
+Leurs notes vont de bonnes à très bonnes (4,3 à 4,6) mais leurs parts de marché sont encore très faibles. Ces structures suscitent de fortes attentes, comme le prouvent les levées de fonds importantes (Alan a été valorisée à 1,4 milliards en 2021) qu'elles ont réalisées ces dernières années.
+
+Nous étudierons Alan, la plus grosse d'entre elles, comme illustration de ce groupe.
+
+## 3.3 Les courtiers en plein tâtonnement
+
+```{r}
+assur %>%
+ filter(Type %in% "Courtier") %>%
+ ggplot() +
+  aes(
+    x = `Chiffre d'affaire (en M\200)`,
+    y = `Note moyenne`,
+    colour = Applications,
+    size = Applications,
+    label = Assureur
+  ) +
+  geom_point(shape = "circle") +
+  scale_color_hue(direction = 1) +
+  labs(subtitle = "Les courties en plein tâtonnement") +
+  theme_minimal() + ylim(0, 5)-> daftpunk
+  htmlwidgets::saveWidget(ggplotly(daftpunk),file.path(results_dir, 'daftpunk.html'))
+
+```
+
+<iframe scrolling='no' seamless='seamless' style='border:none'
+src='results\daftpunk.html' width='800' height='500'></iframe> 
+
+Dire que les courtiers sont en retard dans la course aux applications mobiles serait un euphémisme. Pour 5 sur 6 présents dans notre étude, leur note moyenne se trouve entre 2 et 3.  
+Coment expliquer ce phénomène ? Sur le papier, les courtiers ne sont pas des assureurs mais seulement des distributeurs qui ne vendent pas leurs propres produits. Ils ont donc des chiffres d'affaires nettement moins élevés, et des contraintes théoriques fortes sur la mise en place du self-care. Les prestations étant par exemple validées et versées par le véritable assureur du contrat, il est difficile pour le courtier de proposer de l'instantanéité quand il n'est qu'un simple intermédiaire.   
+Néanmoins, certains courtiers distribuent des produits sous leur propre marque. Le contrat est signé entre le courtier et l'assuré, et les équipes de gestion sont logés chez ce dernier. Il n'est juste pas __l'assureur__ du contrat puisqu'il ne porte par le risque, qui est placé chez un "véritable" assureur, soit directement soit en réassurance. 
+Ainsi, bon nombre de clients ne font même plus la différence entre certains courtiers et les assureurs "classiques". Dès lors, comment expliquer la faiblesse des notes de ce groupe ? 
+
+Aon, dont les notes sont nettement supérieures au reste du groupe, montre qu'il est possible pour un courtier de réussir son application client. 
+
+Nous comparerons Aon et Gras Savoye dans notre partie études de cas. 
+
+## 3.4 Prévoyance : dans quelle mesure l'assurance des personnes est-elle numérisable ?
+
+```{r}
+assur %>%
+ filter(Type %in% "Prévoyance") %>%
+ ggplot() +
+  aes(
+    x = `Chiffre d'affaire (en M\200)`,
+    y = `Note moyenne`,
+    colour = Applications,
+    size = Applications,
+    label = Assureur
+  ) +
+  geom_point(shape = "circle") +
+  scale_color_hue(direction = 1) +
+  labs(
+    subtitle = "L'assurance des personnes est-elle digitalisable ?"
+  ) +
+  theme_minimal() +
+  ylim(0, 5) -> pinkfloyd
+  htmlwidgets::saveWidget(ggplotly(pinkfloyd),file.path(results_dir, 'pinkfloyd.html'))
+  assur$Applications<- as.numeric(assur$Applications) 
+```
+<iframe scrolling='no' seamless='seamless' style='border:none'
+src='results\pinkfloyd.html' width='800' height='500'></iframe> 
+
+La répartition des notes au sein du groupe "Prévoyance" pose la question de la digitalisation ou non des produits de prévoyance et d'assurance vie. Aucune des applications étudiées ne dépasse la barre symbolique des 4 étoiles. 
+Certains géants de l'assurance comme AG2R et CNP ont des notes en dessous de 3 e 2,5. 
+
+Néanmoins, Malakoff Humanis se distingue dans ce groupe et réalise une jolie performance avec une moyenne de 3,8 répartie sur deux applications.  
+
+On étudiera Malakoff Humains & AG2R dans la partie suivante.
+//
+AG2R propose d'ailleurs un service particulièrement étonnant avec son application "Post & Moi, notée 1,7 étoile sur Play Store et qui permet de "suivre & pârtager l'actualité AG2R sur les réseaux sociaux". Difficile de trouver une autre application répondant aux besoins de moins de personnes. AG2R n'a pas d'application de self-care sur Play Store, mais en a une sur l'app store. 
+
+# 4. Etudes de cas 
+
+## 4.1 GMF, le meilleur 
+
+Assureur | CA (en M€)| Note |Nombre d'applications
+------------- | ------------- | ------------- | -------------
+GMF | 3000 | 4,7 | 1
+
+
+Assureur mutaliste sans intermédiaire (ses distributeurs sont des salariés), originellement destiné aux fonctionnaires, GMF est probablement la plus grosse surprise de notre étude, puisqu'il trône en tête de notre classement, devant les assurtechs.  
+Pour atteindre ce niveau de satisfaction, la GMF a misé sur une applicationd de self-care unique. Sur cette application, il est possible de réaliser des démarches sur les produits sur lesquels les interactions à l'initiative du client sur les plus fréquentes et les plus simples à régle : auto, habitation, santé, protection juridique ou encore les produits d'épargne. Exit les produits compliqués nécessitant des démarches administratices plus lourdes comme beaucoup de produits de prévoyance. 
+Au delà de la déclaration et du suivi de sinistres, point crucial de toute application de selfcare, l'application GMF propose la réalisation de devis en quelques clics, la possibilité de contacter ou prendre RDV en agence directement via une interface dédiée, et de discuter avec une assistante virtuelle de type IA qui redirige rapidement vers un contact humain du service client en cas d'insatisfaction.
+
+En consultant les avis, voici les points positifs le plus souvent mis en avant : 
+
+- Fluidité & Intuitivité 
+- Possibilité de réaliser la plupart des démarches administratives en selfcare (attestations, avenants simples, suivi des garanties, déclaration de sinistres...)
+- Suivi en direct des démarches
+- Signature éléctronique intégrée 
+- Réactivité de l'assistance humaine - liaison directe avec les conseillers
+
+Les points négatifs les plus relevés sont : 
+
+- Bugs 
+- Quelques commentaires négatifs critiquant l'ensemble de l'expérience client et non l'application. 
+
+## 4.2 MMA, le plus mauvais (?)
+
+Assureur | CA (en M€)| Note |Nombre d'applications
+------------- | ------------- | ------------- | -------------
+MMA | 3000 | 1,5 | 1 
+
+
+Il est étonnant de noter que le meilleur et le plus mauvais élève de notre étude appartiennents tous les deux au groupe Covéa. Quelle différence entre MMA et GMF ? La différence principale est probablement le mode de distribution. MMA dispose d'un réseau d'agent généraux, et comme d'autres assureurs à réseau,  le groupe a probablement décidé de miser sur son réseau au détriment de certains pans du digital. 
+
+Intitulée "Mon assureur", l'application MMA sur Play Store est plus proche du site web fixe que de l'application dynamique. Mais son plus grand défaut est d'être trompeuse. Ainsi, nous l'avons nous-même téléchargée en pensant ouvrir une application centrale MMA.
+En l'ouvrant, nous avons découvert qu'il s'agissait en réalité de l'application d'une seule agence MMA dans la région de Lyon. Cette application est donc la seule application MMA sur le Play Store, et elle a en plus le tort de tromper le grand public qui croit pouvoir accéder à son espace client. 
+
+Dès lors, les notes et les commentaires traduisent la frustration des adhérents MMA, certains annonçant même songer à changer d'assureur. Ne pas être présent à travers une application mobile peut être un choix rationnel, mais encore faut-il conserver le contrôle de sa présence digitale. On peut même se demander si MMA est au courant de l'existance de cette application sortie il y a 4 ans, tant elle est mauvaise pour son image. 
+
+
+En consultant les avis, voici les points positifs le plus souvent mis en avant : 
+
+- Aucun. Les 3 personnes ayant mis plus de 4 étoiles n'ont pas laissé de commentaire. 
+
+Les points négatifs les plus relevés sont : 
+
+- Pas un espace client, application vitrine
+- Bugs
+- Pas d'intérêt
+- Trompeur
+- Visuels peu modernes
+
+
+
