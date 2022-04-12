@@ -667,7 +667,7 @@ Les points négatifs les plus relevés sont :
 
 Assureur | CA (en M€)| Note |Nombre d'applications
 ------------- | ------------- | ------------- | -------------
-MMA | 3000 | 1,5 | 1 
+MMA | 4200 | 1,5 | 1 
 
 
 Il est étonnant de noter que le meilleur et le plus mauvais élève de notre étude appartiennents tous les deux au groupe Covéa. Quelle différence entre MMA et GMF ? La différence principale est probablement le mode de distribution. MMA dispose d'un réseau d'agent généraux, et comme d'autres assureurs à réseau,  le groupe a probablement décidé de miser sur son réseau au détriment de certains pans du digital. 
@@ -690,5 +690,137 @@ Les points négatifs les plus relevés sont :
 - Trompeur
 - Visuels peu modernes
 
+## 4.3 Gan assurances, absent ou mal représenté ?
+
+Assureur | CA (en M€)| Note |Nombre d'applications
+------------- | ------------- | ------------- | -------------
+Gan Assurances | 2000 | 2,2 | 4 
+
+Filiale de Groupama, Gan Assurances présente des points communs avec MMA puisqu'elle dispose également d'un réseau d'agents généraux assurant la distribution de ses contrats. 
+
+Gan fait partie de ces assureurs en partie réfractaire à la digitalisation de la relation client, et souhaite avant tout mettre en avant son réseau dans ses actions commerciales, et l'humain au coeur de son offre de services. 
+
+Gan Assurances a tout de même mis 2 applications à destination de ses usagers, les deux concernant son offre de santé, le produit étant probablement le plus simple à passer en selfcare. 
+
+L'applcation Gan Santé est notée 2,2. Dans son descriptif, elle fait pourtant la même promesse que la plupart des applications du genre : possibilité de faire des déclarations de sinistre, de joindre des justificatifs et de suivre ses remboursements. 
+
+Il en va de même pour l'application "Plan Santé Gan", qui ressemble à un faux vu le logo & les couleurs utilisés, et qui visiblement est à destination des contrats santé Gan gérés par NoveoCare. Son nom a probablement trompé de nombreux utilisateurs, car sa note (1,1) est presque la note minimale possible (on ne peut pas donenr un 0 sur Play Store).
+
+Les deux autres applications (Gan Eurocourtage, note 1,3 & Gan Patrimoine, note 4), font partie de la marque "Gan" mais ne sont pas gérées par Gan assurances, ce qui peut ête trompeur. Gan Patrimoine, qui permet de suivre ses produits d'épargner, est la seule à être bien reçue.
+
+En consultant les avis, voici les points positifs le plus souvent mis en avant : 
+
+- Simple & peu intrusif
+- Accès à la carte de tiers-payant
+- Suivi des remboursements
+
+Les points négatifs les plus relevés sont : 
+
+- Très nombreux bugs & incohérences 
+- Difficultés de connexion 
+- Nombreux commentaires sur la difficulté de transmettre des documents 
+
+## 4.4 La MAIF, quand le mieux est l'ennemi de bien 
+
+Assureur | CA (en M€)| Note |Nombre d'applications
+------------- | ------------- | ------------- | -------------
+MAIF | 3700 | 4 | 5 
+
+Si nous ne prenions en compte que les applications de self-care/espaces clients, la mutuelle des instituteurs se trouverait, à l'instar de GMF, dans les meilleurs assureurs de notre classement. Son application principale est notée à 4,6, et rempli tous les critères des applications les plus performantes du marché : présence d'un grand nombre de produits en IARD et assurance vie, possibilité d'effectuer des démarches simples (déclaration de sinistres, mises à jour administratives) et de suivre leur avancement, devis & souscription en ligne, accès rapide à un conseiller lorsque le numérique atteint ses limites. 
+
+Cependant, les autres applications MAIF viennent diminuer la note moyenne de l'assureur. L'application MAIF & Go, permettant d'évaluer sa conduite, nécessite de commander et d'installer un boîtier, et souffre de nombreux bugs. Quant à l'application Mes Data & Moi, permet de consulter du contenu en lien avec la protection des données & de recevoir des alertes en cas d'exposition de son mail à une fuite de données. Partant d'une bonne intention, elle a reçu un mauvais accueil. Les commentaires dénoncent de nombreux bugs, un manque d'ergonomie voire même une utilité douteuse. 
+La MAIF est l'illustration de la tendance des assureurs à vouloir proposer des applications de services supplémentaires pour valoriser leur offre. Ces applications souvent développées avec des moyens assez faibles et ne répondant pas toujours à un véritable besoin, finissent souvent par attirer un nombre d'utilisateurs faible et par ne pas apporter grand chose. 
+
+En consultant les avis (application de selfcare), voici les points positifs le plus souvent mis en avant : 
+
+- Simple & peu intrusif
+- Accès à de nombreux documents téléchargeables
+- Déclaration des sinistres & suivi des remboursements 
+- Design plaisant
+- Vision d'ensemble
+
+Les points négatifs les plus relevés sont : 
+
+- Intégration de la partie budget (autrefois appli détachée NESTOR) à l'appli centrale ratée pour de nombreux utilisateurs
 
 
+## 4.5 Groupama ou la nécessité de maîtriser sa présence en ligne
+
+Assureur | CA (en M€)| Note |Nombre d'applications
+------------- | ------------- | ------------- | -------------
+Groupama | 14000 | 3,5 | 5 
+
+Le géant Groupama est beaucoup (trop) présent dans le Play Store. Son application de self-care, très classique, est plutôt bonne puisqu'elle est notée à 4,1. L'application est globalement performante, puisqu'elle permet de suivre de façon centralisée les contrats souscrits auprès de l'assureur mutualiste, et même de fusionner plusieurs comptes (pro/perso) en les ajoutant à ses identifiants de connexion. Il y est également possible de récupérer son attestation de tiers payant en santé, et de réaliser et suivre ses sinistres en auto et en habitation.
+
+Mais la note globale de Groupama souffre de la présence d'autres applications comme "Groupama ma prévention météo" ou "Groupama Box Habitat" de qualité bien plus faible, voire pleines de bugs, et dont on est même pas certain qu'elles aient été réellement développé avec l'accord du groupe. Cela démontré à nouveau la nécessité de maîtriser sa présence en ligne & sur les marchés d'applications mobiles. Ces applications de mauvaise qualité ne répondent pas forcément à des besoins massifs et génèrent des frustrations chez les clients. Il vaut probablement mieux s'abstenir que d'en réaliser une avec des contraintes de temps & humaines trop fortes, ou que de passer par un sous-traitant proposant des services médiocres. 
+
+## 4.6 Alan, la gamification de l'assurance santé 
+
+Assureur | CA (en M€)| Note |Nombre d'applications
+------------- | ------------- | ------------- | -------------
+Alan | 3000 | 100 | 1
+
+"La gamification consiste à ajouter des mécanismes de jeu dans des environnements non ludiques, comme un site web, une communauté en ligne, un système de gestion de l'apprentissage ou l'intranet d'une entreprise, afin d'accroître la participation. L'objectif de la gamification est d'inciter les consommateurs, les employés et les partenaires à collaborer, partager et interagir." - [biworldwide.com](https://www.biworldwide.com/gamification/what-is-gamification/#:~:text=Gamification%20is%20adding%20game%20mechanics,inspire%20collaborate%2C%20share%20and%20interact.)
+
+Etant un spécialiste du digital et de l'assurance santé, il est vital pour un assurtech comme Alan de se démarquer de la concurrence en terme de niveau de service proposé par son aplication mobile. Son application ne propose pas forcément beaucoup de services supplémentaires par rapport aux applications GMF et MAIF que nous avons déjà étudiés, même si on peut tout de même noter la possiblité de scanner sa carte vitale à l'inscription pour éviter de saisir ses informations à la main. Il est également possible de discuter avec un médecin ou de lancer une téléconsultation directement dans l'application. 
+
+Au dela de ces agréments, on note le design presque parfait de cette application. Elle est fluide, claire et très bien organisée. Toutes les fonctionnalités sont accessibles en seulement 1 clic ou 2 de la part de l'utilisateur. Au delà de l'UX, le design UI est également de très haut niveau. L'écran n'est pas surchargé, les couleurs respectent la règles des "60-30-10", on retrouve une icône descriptive en face de chaque action... L'application suit même la tendance à la "gamification" des applications mobiles, en faisant par exemple passer une nouvelle positive (ex : un remboursement) comme une "récompense", avec des animations apparaissant à l'écran, des bares de progression ou une notifications avec un emoji représentant des confettis. 
+
+
+En consultant les avis, voici les points positifs le plus souvent mis en avant : 
+
+- Fonctionnalités originales et utiles (téléconsultation)
+- Interface intuitive, visuelle & rapide
+- Détail visuel & facilement accessible du détail des remboursements par acte
+- Equipe réactive & remboursements rapide
+
+Les points négatifs les plus relevés sont : 
+- Bugs 
+- Absence de ligne téléphonique
+
+
+
+## 4.7 Aon & Gras Savoye : un espace client chez les courtiers  
+
+Assureur | CA (en M€)| Note |Nombre d'applications
+------------- | ------------- | ------------- | -------------
+Aon France | 380 | 4,1 | 2 
+Gras Savoye | 400 | 2,2 | 1 
+
+Comme nous l'avons précédemment expliqué, il est encore plus compliqué pour un courtier de développer un espace adhérent permettant un bon niveau de self-care. Nous comparerons ici Gras Savoye, et Aon. gras Savoye a développé une application espace adhérent autour de sa complémetaire Santé (note : 2,2). Aon propose deux applications, autour de l'assurance santé (4,6) et de l'assurance auto (3,6). 
+
+Sur le papier, Gras Savoye propose un niveau de service classique, avec une application permettant de suivre 
+
+
+# 5. Conclusions 
+
+
+## 5.1 Niveau(x) de maturité - typologie
+
+Tout au long de cette étude, nous avons observé et démontré la grande hétérogénéité & la faible maturité du secteur de l'assurance en matière d'applications mobiles de type "espace client". Ces observations nous permettent de définir 4 niveaux de maturité dans lesquels ranger nos différents sujets d'étude. 
+
+**Niveau 1 : Les absents**  
+
+Les absents sont, par choix ou manque de moyens, soit totalement absents des plateformes de téléchargements, soit présents à travers des applications vitrines peu utiles, souvent à l'aspect archaïque. Cette catégorie est de moins en moins remplie, même les plus petits assureurs tentant (avec des fortunes diverses) de développer leur propre application. 
+
+Dans notre étude, on n'y trouvera que MMA, AG2R & Agrica (AG2R & Agrica étant présents sur l'Apple Store). 
+S'il s'agit d'un choix stratégique, on pourra au moins conseiller à ces acteurs de contrôler leur présence sur ces plateformes en limitant les applications pouvant nuire à leur image.
+
+**Niveau 2 : Les retardataires**
+
+On pourrait classer la majorité de notre étude dans cette catégorie, à savoir la plupart des assureurs notés entre 2 & 3,5. Pour la plupart, ils ont développé une ou plusieurs applications d'espace client, sous centralisée soit par produit. Néanmoins, leur aspect ets souvent peu moderne; et les nombreux bugs signalés dans les commentaires témoignent d'une expérience utilisateur dégradée & de moyens alloués souvant insuffisants. 
+Les nombreux bugs signalés peuvent aussi signaler une application avec un design UX de mauvaise facture : les utilisateurs peuvent croire à des "erreurs" lorsqu'une application ne répond pas à leurs attente et ne réagit pas de façon claire et précuse. 
+
+On trouve dans cette catégorie de nombreux courtiers & institutions de prévoyance, du fait de la nature de leur activité. 
+
+Cette étude montre d'ailleurs qu'en dehors de la mutuelle santé & de l'assurance vie, la plupart des produits d'assurance de personnes sont plus complexes, avec des démarches plus lourdes & des sinistres moins fréquents, et sont aujourd'hui bien moins digitalisés que les autres produits. Ils ne sont cependant pas impossibles à digitaliser, comme le prouve l'arrivée de l'assurtech Mutumutu dans le domaine de la prévoyance.
+
+**Niveau 3 : Au niveau**
+
+On trouve également un bon nombre d'assureurs dans cette étude, avec des notes souvent entre 3,5 et 4,1 et une note supérieure à 4 pour leur application espace client. Ces applications proposent souvent un niveau de service similaire à celui du niveau 2, avec de la consultation de garanties, de la déclaration et du suivi de sinistres, et éventuellement quelques mises à jour administratives sur un nombre limité de produits (souvent la mutuelle santé, avec parfois l'assurance auto et habitation). Elles se démarquent du niveau 2 par une plus grande intuitivité, et surtout moins de bugs en tout genre (fermeture impromptues, connexion impossible, bouton sans effet...)
+
+**Niveau 4 : En avance**
+
+
+
+## 5.2 Observations & Ouvertures
