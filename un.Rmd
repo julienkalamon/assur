@@ -48,27 +48,25 @@ text-align: justify;
 
 ### A. Constats de départ
 
-Le secteur des assurances est resté longtemps hermétique au digital. Alors que de nombreux secteurs effectuaient leur révolution numérique, les services assurantiels sont longtemps restées centrés autour d'une relation physique entre un agent ou un courtier et son client, tant pour la prospection commerciale que pour la prestation.  
-Cependant, l'arrivée ces dernières années de nouveaux acteurs sur le marché a bousculé ce schéma qui semblait immuable. Les assurtech, startups de l'assurance 100% digitalisées, ont réussi à attaquer des segments de marché grâce à un modèle innovant. Ces assureurs sont souvent organisés autour d'une application (web ou mobile) unique, et qui permet une autonomie totale pour l'assuré, de la souscription du contrat jusqu'à sa résiliation, en passant par les avenants ou les demandes de prestation.  Ces assurtech ont connu un certain succès car leur niveau service permet de pallier certains manquements des assureurs traditionnels, comme la simplicité et la rapidité des démarches.  
-L'arrivée de ces acteurs, capables d’attaquer le marché avec des moyens relativement faibles au regard des CA des monstres sacrés qui dominent le monde de l'assurance, a lancé une véritable course au digital. Les exigences nouvelles des consommateurs ne sont pas forcément simples à concilier avec le poids de la réglementation et des systèmes d'information en place chez les assureurs traditionnels. La place du réseau, pour ceux dont la distribution ne se fait pas en direct, est une autre composante à prendre en compte, car le self-care peut soulager un agent général ou un courtier, comme il peut lui donner l'impression d'une perte de compétence et de relation client en fonction de sa mise en place.  
-Ainsi, si tous les assureurs ne font pas face aux mêmes contraintes, tous s'engagent aujourd'hui sur la voie du self-care. Certains développent une application centralisée permettant au client d'avoir une vision unique de ses contrats & démarches, tandis que d'autres choisissent d'en développer plusieurs en fonction des produits. Pour valoriser leur offre, certains assureurs décident même de mettre à disposition des utilisateurs des applications offrant des services supplémentaires, comme AlcooTel de la MAAF qui permet d'estimer son alcoolémie en fonction de l'heure et de sa consommation d'alcool.  
+Le secteur des assurances est resté longtemps hermétique au digital. Alors que de nombreux secteurs effectuaient leur révolution numérique, les services assurantiels sont pendant un certain temps restés centrés autour d'une relation physique entre un agent ou un courtier et son client, tant pour la prospection commerciale que pour la prestation.  
+Cependant, l'arrivée ces dernières années de nouveaux acteurs sur le marché a bousculé ce schéma qui semblait immuable. Les assurtech, startups de l'assurance 100% digitalisées, ont réussi à attaquer des segments de marché grâce à un modèle innovant. Ces assureurs sont souvent organisés autour d'une application (web ou mobile) unique, et qui permet une autonomie totale pour l'assuré, de la souscription du contrat jusqu'à sa résiliation, en passant par les avenants ou les demandes de prestation. Ces assurtech ont connu un certain succès car leur niveau de service permet de pallier certains manquements des assureurs traditionnels, comme la simplicité et la rapidité des démarches.  
+L'arrivée de ces acteurs, capables d’attaquer le marché avec des moyens relativement faibles au regard des CA des monstres sacrés qui dominent le monde de l'assurance, a lancé une véritable course au digital. Les exigences nouvelles des consommateurs ne sont pas forcément simples à concilier avec le poids de la réglementation et des systèmes d'information en place chez les assureurs traditionnels. La place du réseau, pour ceux dont la distribution ne se fait pas en direct, est une autre composante à prendre en compte, car le selfcare peut soulager un agent général ou un courtier, comme il peut lui donner l'impression d'une perte de compétence et de relation client en fonction de sa mise en place.  
+Ainsi, si tous les assureurs ne font pas face aux mêmes contraintes, tous s'engagent aujourd'hui sur la voie du selfcare. Certains développent une application centralisée permettant au client d'avoir une vision unique de ses contrats & démarches, tandis que d'autres choisissent d'en développer plusieurs en fonction des produits. Pour valoriser leur offre, certains assureurs décident même de mettre à disposition des utilisateurs des applications offrant des services supplémentaires, comme AlcooTel de la MAAF qui permet d'estimer son alcoolémie en fonction de l'heure et de sa consommation d'alcool.  
 
 ### B. Objectifs
 
-Le but de cette étude sera donc de faire un état des lieux des applications mises à disposition des assurés, et de voir leur réception et leur taux de pénétration sur le marché au regard de la taille des assureurs qui les publient. Nous utiliserons comme mesure principale du taux de satisfaction client la note moyenne donnée aux applications sur le Google Play Store, et le nombre de téléchargements comme mesure du taux de pénétration. 
+Dans un contexte où les assureurs annoncent investir des moyens très importants pour digitaliser la relation client, KALAMON CONSULTING a souhaité dresser un état des lieux des applications mises à disposition des assurés, et de voir leur réception et leur taux de pénétration sur le marché au regard de la taille des assureurs qui les publient. Nous utiliserons comme mesure principale du taux de satisfaction client la note moyenne donnée aux applications sur le Google Play Store, et le nombre de téléchargements comme mesure du taux de pénétration. 
 Nous comparerons ces mesures au chiffre d’affaires, au nombre d'applications utilisateurs et à la typologie des différents acteurs pour valider ou invalider des hypothèses, et éventuellement mettre en lumière des phénomènes non mentionnés dans nos hypothèses de départ. 
 
 ### C. Hypothèses de départ 
 
 Dans cette étude, nous nous attendons à constater que :  
 
-- Les assurtech possèdent les moyennes de notes les plus élevées grâce à un parcours client basé originellement basé le self-care comme valeur différenciante. 
+- Les assurtech possèdent les moyennes de notes les plus élevées grâce à un parcours client originellement basé le self-care comme valeur différenciante. 
 
 - Les assureurs traditionnels avec un chiffre d’affaires important sont mieux notés et pénètrent mieux le marché que ceux à faible ou moyen chiffre d'affaire car ils disposent de budget plus élevés pour développer des applications mobiles, et évidemment d’un portefeuille plus large. 
 
 - Les assureurs proposant plusieurs applications ont des notes moyennes plus basses car les clients préfèrent utiliser un canal unique, et car les applications de service supplémentaires répondent rarement à un véritable besoin. 
-
-- Les assureurs ayant des applications mieux notées pénètrent mieux le marché.
 
 - En dehors des assutechs, on s'attend à trouver une note moyenne relativement faible, témoignant d'un secteur encore en cours de digitalisation.
 
@@ -78,13 +76,13 @@ Dans cette étude, nous nous attendons à constater que :
 
 Dans la présente étude, on utilisera les définitions ci-après : 
 
-- Généraliste : une compagnie d'assurance, à but lucratif ou non, commercialisant la plupart des produits d'assurance présents sur le marché (IARD, Prévoyance, épargne...)
+- Généraliste : une compagnie d'assurance, à but lucratif ou non, commercialisant la plupart des produits d'assurance présents sur le marché (IARD, ADP, épargne...)
 
-- Prévoyance : une compagnie d'assurance, à but lucratif ou non, commercialisant principalement des produits de prévoyance et d'épargne. 
+- Prévoyance : une compagnie d'assurance, à but lucratif ou non, commercialisant principalement des produits d'assurance de personnes et/ou d'assurance-vie. 
 
 - Startup : désigne les assurtech. 
 
-- Téléchargements : le nombre de téléchargements de l'application principal d'un assureur sur le Google Play Store. Attention, le nombre exact n'est jamais dévoilé : il s'agit toujours d'une fourchette.
+- Téléchargements : le nombre de téléchargements de l'application principale d'un assureur sur le Google Play Store. Attention, le nombre exact n'est jamais dévoilé : il s'agit toujours d'une fourchette.
 
 - Note moyenne : la note moyenne de l'ensemble des applications utilisateur d'un assureur sur le Google Play Store, ou à défaut sur l'Apple Store. Il s'agit d'une note sur 5. 
 
@@ -121,12 +119,12 @@ ggplot(assur) +
 ```
 
 
-Le groupe d'étude est composé de 40 acteurs du secteur de l'assurance dont : 
+Le groupe d'étude est composé de 39 acteurs du secteur de l'assurance dont : 
 
  - 17 généralistes 
- - 11 assureurs spécialisés en prévoyance
- - 6 courtiers
- - 4 startups 
+ - 11 assureurs spécialisés en assurance de personnes/assurance-vie (groupe "prévoyance")
+ - 7 courtiers
+ - 4 assurtechs 
  - 1 spécialiste de l'assurance automobile 
  
 ### A. Applications
@@ -144,7 +142,7 @@ p1
 ```
 
 
-La grande majorité des acteurs étudiés met 1 à 2 applications à disposition de ses clients. Néanmoins, certains généralistes - du fait de leur taille et/ou du nombre plus importants de produits commercialisés - ont publié jusqu'à 5 (Groupama) applications sur le Play Store. 
+La grande majorité des acteurs étudiés met 1 à 2 applications à disposition de ses clients. Néanmoins, certains généralistes - du fait de leur taille et/ou du nombre plus importants de produits commercialisés - ont publié jusqu'à 5 applications sur le Play Store. 
 
 La moyenne d'applications proposées est de 1,8
 
@@ -196,7 +194,7 @@ ggplotly(p4) ->p4
 p4
 ```
 
-Logiquement, les CA moyens de startups (40 millions) et des courtiers (245 millions) sont sans communes mesures. 
+Logiquement, les CA moyens des assurtech (40 millions) et des courtiers (245 millions) sont sans communes mesures. 
 
 ### C. Téléchargements 
 
@@ -408,7 +406,7 @@ assur %>%
   geom_jitter(size = 1.5) +
   scale_color_hue(direction = 1) +
   labs(
-    title = "Le nombre de téléchargemets est corrélié au chiffre d'affaires,
+    title = "Le nombre de téléchargemets est corrélé au chiffre d'affaires,
     avec quelques exceptions"
   ) +
   theme_minimal() -> luffy
@@ -724,7 +722,7 @@ Les points négatifs les plus relevés sont :
 
 Assureur | CA (en M€)| Note |Nombre d'applications
 ------------- | ------------- | ------------- | -------------
-MAIF | 3700 | 4 | 5 
+MAIF | 3700 | 4 | 4 
 
 Si nous ne prenions en compte que les applications de self-care/espaces clients, la mutuelle des instituteurs se trouverait, à l'instar de GMF, dans les meilleurs assureurs de notre classement. Son application principale est notée à 4,6, et rempli tous les critères des applications les plus performantes du marché : présence d'un grand nombre de produits en IARD et assurance vie, possibilité d'effectuer des démarches simples (déclaration de sinistres, mises à jour administratives) et de suivre leur avancement, devis & souscription en ligne, accès rapide à un conseiller lorsque le numérique atteint ses limites. 
 
@@ -758,7 +756,7 @@ Mais la note globale de Groupama souffre de la présence d'autres applications c
 
 Assureur | CA (en M€)| Note |Nombre d'applications
 ------------- | ------------- | ------------- | -------------
-Alan | 3000 | 100 | 1
+Alan | 100 | 4,3 | 1
 
 "La gamification consiste à ajouter des mécanismes de jeu dans des environnements non ludiques, comme un site web, une communauté en ligne, un système de gestion de l'apprentissage ou l'intranet d'une entreprise, afin d'accroître la participation. L'objectif de la gamification est d'inciter les consommateurs, les employés et les partenaires à collaborer, partager et interagir." - [biworldwide.com](https://www.biworldwide.com/gamification/what-is-gamification/#:~:text=Gamification%20is%20adding%20game%20mechanics,inspire%20collaborate%2C%20share%20and%20interact.)
 
@@ -771,8 +769,8 @@ En consultant les avis, voici les points positifs le plus souvent mis en avant :
 
 - Fonctionnalités originales et utiles (téléconsultation)
 - Interface intuitive, visuelle & rapide
-- Détail visuel & facilement accessible du détail des remboursements par acte
-- Equipe réactive & remboursements rapide
+- Détails visuels & facilement accessibles des remboursements par acte
+- Equipe réactive & remboursements rapides
 
 Les points négatifs les plus relevés sont : 
 - Bugs 
@@ -780,7 +778,7 @@ Les points négatifs les plus relevés sont :
 
 
 
-## 4.7 Aon & Gras Savoye : un espace client chez les courtiers  
+## 4.7 Aon & WTW - Gras Savoye : un espace client chez les courtiers  
 
 Assureur | CA (en M€)| Note |Nombre d'applications
 ------------- | ------------- | ------------- | -------------
@@ -789,8 +787,50 @@ Gras Savoye | 400 | 2,2 | 1
 
 Comme nous l'avons précédemment expliqué, il est encore plus compliqué pour un courtier de développer un espace adhérent permettant un bon niveau de self-care. Nous comparerons ici Gras Savoye, et Aon. gras Savoye a développé une application espace adhérent autour de sa complémetaire Santé (note : 2,2). Aon propose deux applications, autour de l'assurance santé (4,6) et de l'assurance auto (3,6). 
 
-Sur le papier, Gras Savoye propose un niveau de service classique, avec une application permettant de suivre 
+Sur le papier, Gras Savoye propose un niveau de service classique, avec une application permettant de suivre ses demandes de remboursement, consulter sa carte de tiers payant, transmettre des documents. Le problème majeur de cette application est qu'aucune des fonctionnalités principales ne semble fonctionner correctement.
+De la connexion à la consultation de la carte de tiers payant en passant par la recherche de praticien, un ou plusieurs bugs critiques sont remontés par les utilisateurs. Cette application est l'illustration parfaite des applications de selfcare réalisées avec de bonnes idées mais avec des moyens trop faibles pour obtenir un résultat satisfaisant.
 
+De son côté, Aon France, filial du groupe Aon au CA annuel de plus de 10 milliards d'euros, disposait peut-être de moyens plus importants pour sa transition numérique sur mobile. L'application santé d'Aon propose les mêmes fonctionnalités que celle de Gars Savoye, avec quelques extras (Demande de devis, modifications administratives au contrat). L'application rencontre peu de bugs et propose des visuels nettement plus modernes, ce qui témoigne d'une attention particulière portée aux mises à jour et à l'évolution de l'application.
+Son application Aon auto, qui reprend des graphismes et des fonctionnalités similaires, est moins bien notée. Destinée à un public plus restreint, elle n'est probablement pas traitée avec la même attention par le courtier. 
+
+En consultant les avis, voici les points positifs le plus souvent mis en avant
+
+- Interface intuitive, visuelle & simple d'utilisation
+- Equipe réactive & remboursements rapides
+
+Les points négatifs les plus relevés sont : 
+- Bugs de connexion
+
+## 4.8 Malakoff Humanis, le plus geek
+
+Assureur | CA (en M€)| Note |Nombre d'applications
+------------- | ------------- | ------------- | -------------
+Malakoff Humanis | 6200 | 4,6 | 1 
+
+
+Malakoff Humanis a fait le pari - réussi - de ne proposer d'espace client que pour sa complémentaire santé. L'application est réussie visuellement, et propose les démarches "classiques" pour une application en complémentaire santé (transmission de factures, suivi des remboursements, téléchargement de la carte de tiers payant). L'assureur a également fait le pari d'ajouter queques fonctionnalités qui plairont aux plus technophiles : ajout de sa carte d'assuré sur Google Pay ou Apple Wallet et affichage de la carte de tiers payant au format QR code. Vraie avancée ou gadget ? 
+Quoi qu'il en soit, l'application est très bien reçue par les assurés.
+
+En consultant les avis, voici les points positifs le plus souvent mis en avant : 
+
+- Interface intuitive, visuelle & simple d'utilisation
+- Demande de prise en charge très simple grâce à l'ajout d'une simple photo comme justificatif
+
+Les points négatifs les plus relevés sont : 
+
+- Application inaccessible pour une partie de la base adhérent (les adhérents "à 9 chiffres")
+- Impossible de revoir les pièces transmises après leur envoi 
+
+## 4.9 AG2R La Mondiale, le plus étonnant
+
+Assureur | CA (en M€)| Note |Nombre d'applications
+------------- | ------------- | ------------- | -------------
+AG2R | 9200 | 1,7 | 1 
+
+La stratégie adoptée par AG2R est pour le moins étonnante. Le géant de la prévoyance a décidé de ne développer d'application de type service client que sur iPhone (20%) du marché français. Et cette application, très mal notée, n'est même pas une application d'espace client mais bien une application de service client, c'est-à-dire une FAQ géante avec un formulaire de demande de contact. La réception est, de façon peu surprenante, mauvaise.  
+Sur Android, la note est encore moins bonne. Il faut dire que l'utilité de l'application proposée est plutôt discutable. 
+Intitulée "Post&Moi", elle propose de suivre dans une seule application tous les posts sur les réseaux sociaux d'AG2R. 
+Le premier écran demande une adresse mail pour se connecter, sans mot de passe. En mettant notre mail, nous avons eu un message d'erreur, come la majorité des personnes ayant laissé un avis. A ce niveau, on pourrait presque croire à une application de phishing.
 
 # 5. Conclusions 
 
@@ -819,8 +859,20 @@ Cette étude montre d'ailleurs qu'en dehors de la mutuelle santé & de l'assuran
 
 On trouve également un bon nombre d'assureurs dans cette étude, avec des notes souvent entre 3,5 et 4,1 et une note supérieure à 4 pour leur application espace client. Ces applications proposent souvent un niveau de service similaire à celui du niveau 2, avec de la consultation de garanties, de la déclaration et du suivi de sinistres, et éventuellement quelques mises à jour administratives sur un nombre limité de produits (souvent la mutuelle santé, avec parfois l'assurance auto et habitation). Elles se démarquent du niveau 2 par une plus grande intuitivité, et surtout moins de bugs en tout genre (fermeture impromptues, connexion impossible, bouton sans effet...)
 
+Si le niveau de service proposé n'est pas forcément un élément différenciant, il permet au moins de ne pas générer d'insatisfaction client de masse comme les entreprises de niveau 1 & 2. 
+
+
 **Niveau 4 : En avance**
 
+Pour les entreprises que nous considérons comme "en avance" sur le reste du marché, l'application mobiles ou les applications sont un élément à forte valeur ajoutée et différenciant. La plupart de ces applications proposent les mêmes démarches que celles du niveau 3, mais avec des fonctionnalités supplémentaires. Ainsi, les assureurs multi-secteurs proposent de réaliser des démarches simples pour un grand panel de produits d'assurances, et proposent quelques démarches supplémentaires comme l'édition de devis en ligne puis la souscription avec signature éléctronique.
 
+Les mieux notés au sein du groupe de niveau 4 adoptent également une stratégie omnicanale dans la gestion de la relation client. Lorqu'un client se retrouve bloqué sur l'application (pas de réponse à sa question, démarche impossible sur son type de contrat...), il a la possibilité de contacter rapidement un conseiller qui dispose en amont de tous les détails de son contrat et de sa requête. 
+Cette stratégie semble trouver un grand succès auprès des utilisateurs qui la plébiscitent dans leur notation. Ainsi, les assurtechs qui privilégient une application proche de la perfection, avec des services supplémentaires spécifiques au produit (ex : consultation en visio sur Alan, suivi de la dépanneuse sur Leocare...) mais qui suppriment le canal téléphonique au profit d'un parcours monocanal & digital ont des notes légèrement en dessous de leurs concurrents omnicanaux.
 
-## 5.2 Observations & Ouvertures
+## 5.2 Observations 
+
+Voici les principales conclusions de notre étude : 
+
+- Il existe une grande hétérogénéité entre les applications proposées par les assureurs à leurs clients sur mobile. 
+
+- Grâce à des applications bien plus performantes, les assurtechs ont pénétré le marché, et malgré des moyens financiers nettement plus faibles que ceux des acteurs traditionnels
