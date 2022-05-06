@@ -871,8 +871,18 @@ Cette stratégie semble trouver un grand succès auprès des utilisateurs qui la
 
 ## 5.2 Observations 
 
-Voici les principales conclusions de notre étude : 
+Basée exclusivement sur des données publiques, l'étude menée est riche d'enseignements : 
 
-- Il existe une grande hétérogénéité entre les applications proposées par les assureurs à leurs clients sur mobile. 
+- Le secteur de l'assurance est très hétérogène, et on constate de très gros écarts de maturité digitale entre ses acteurs, 
 
-- Grâce à des applications bien plus performantes, les assurtechs ont pénétré le marché, et malgré des moyens financiers nettement plus faibles que ceux des acteurs traditionnels
+- Les plus petits acteurs du marché sont tout aussi capables que les gros de réaliser des applications de qualité, 
+
+- Certains acteurs comme les courtiers ou les spécialistes de l'assurance de personnes éprouvent plus de difficultés à mettre en place des espaces clients satisfaisants sur mobile. Cela découle probablement des contraintes supplémentaires liées à la nature de leur activité et des produits qu'ils commercialisent, 
+
+- Grâce à des applications bien plus performantes, les assurtech ont pénétré le marché bien qu'ayant des moyens financiers nettement plus faibles que ceux des acteurs traditionnels, 
+
+- Certains assureurs traditionnels arrivent à surpasser les assurtech en terme de notes. Pour cela, ils misent sur des applications proches de celles des assurtech en termes d'UX, UI, de niveau de service, et sur une omnicanalité qui fait défaut à leurs concurrents digitaux, 
+
+- De nombreux acteurs tentent de réaliser des applications supplémentaires - hors espace client - pour apporter plus de valeur à leurs clients. Ces applications sont souvent réalisées avec des moyens assez faibles, et répondent rarement à un véritable besoin. Ainsi, elles sont souvent peu téléchargées et mal notées par les clients.
+
+
